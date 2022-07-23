@@ -1,5 +1,6 @@
 from turtle import Turtle
 
+
 class Scorebeard(Turtle):
     def __init__(self):
         super().__init__()
@@ -15,5 +16,9 @@ class Scorebeard(Turtle):
         self.clear()
         self.write(f"Score {self.score}", align="center", font=("Arial", 24, "normal"))
         return self.score
+    
+    def game_over(self):
+        self.goto(0,0)
+        self.write(f"GAME OVER", align="center", font=("Arial", 24, "normal"))
 
     
