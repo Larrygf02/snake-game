@@ -53,4 +53,10 @@ class Snake():
     def right(self):
         if self.head.heading() != LEFT:
             self.head.setheading(RIGHT)
+    
+    def game_new(self):
+        #self.segments = []
+        for seg_num in range(len(self.segments)):
+            self.segments[seg_num].goto(1000, 1000)
+        
                 
