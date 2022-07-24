@@ -1,4 +1,3 @@
-from copyreg import constructor
 from turtle import Screen, Turtle
 from snake import Snake
 from food import Food
